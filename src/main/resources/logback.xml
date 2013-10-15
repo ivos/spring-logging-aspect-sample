@@ -1,0 +1,12 @@
+<configuration>
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+	<root level="off">
+		<appender-ref ref="console" />
+	</root>
+	<logger name="com.github.ivos" level="trace" />
+	<logger name="org.springframework" level="off" />
+</configuration>
